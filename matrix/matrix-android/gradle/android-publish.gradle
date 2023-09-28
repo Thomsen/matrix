@@ -100,7 +100,7 @@ android.libraryVariants.all { variant ->
         destinationDir = file("${buildDir}/docs/javadoc${hasFlavors ? artifactIdSuffix : ""}")
         ext.androidJar = "${android.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar"
         classpath += files(ext.androidJar)
-        classpath += files(configurations.compile)
+        classpath += files(configurations.implementation)
         exclude '**/BuildConfig.java'
         exclude '**/R.java'
         failOnError false

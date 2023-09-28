@@ -7,7 +7,7 @@ dependencies {
     implementation project(':matrix-commons')
     implementation group: 'org.ow2.asm', name: 'asm', version: '7.0'
     implementation group: 'org.ow2.asm', name: 'asm-commons', version: '7.0'
-    implementation 'com.android.tools.build:gradle:4.0.0'
+    implementation 'com.android.tools.build:gradle:7.4.2'
     implementation project(':matrix-arscutil')
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${gradle.KOTLIN_VERSION}"
 }

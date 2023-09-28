@@ -8,11 +8,11 @@ buildscript {
 
     }
 
-    gradle.ext.KOTLIN_VERSION = "1.4.32"
+    gradle.ext.KOTLIN_VERSION = "1.6.21"
 
     dependencies {
         // classpath
-        classpath 'com.android.tools.build:gradle:4.1.0'
+        classpath 'com.android.tools.build:gradle:7.4.2'
         classpath 'digital.wup:android-maven-publish:3.6.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$gradle.KOTLIN_VERSION"
     }
@@ -50,10 +50,12 @@ allprojects {
 
 ext {
     // For android sub-projects
-    minSdkVersion = 19
+    minSdkVersion = 21
     targetSdkVersion = 29
     compileSdkVersion = 31
-    buildToolsVersion = '29.0.2'
+    buildToolsVersion = '30.0.3'
+
+    ndkVersion = '21.4.7075529'
 
     MIN_SDK_VERSION_FOR_HOOK = 21
 

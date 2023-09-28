@@ -6,6 +6,8 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
+    ndkVersion rootProject.ext.ndkVersion
+
     defaultConfig {
         minSdkVersion MIN_SDK_VERSION_FOR_HOOK
         targetSdkVersion rootProject.ext.targetSdkVersion
